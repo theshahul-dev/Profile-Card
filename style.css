@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #444444;
+}
+.card-container{
+    background-color: #171717;
+    width: 20rem;
+    padding: 2rem;
+    height: 20rem;
+}
+.card-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.right-top i{
+    margin-left: 10px;
+}
