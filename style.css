@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     color: whitesmoke;
+    font-family: Tahoma;
 }
 
 body{
@@ -15,13 +16,82 @@ body{
     background-color: #171717;
     width: 20rem;
     padding: 2rem;
-    height: 20rem;
 }
 .card-top{
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
+.card-top i {
+    font-size: 1.4rem;
+}
 .right-top i{
-    margin-left: 10px;
+    margin-left: 20px;
+}
+.card-top i:hover{
+    cursor: pointer;
+}
+.color-change{
+    color: red;
+}
+
+.user-image{
+    background-color: whitesmoke;
+    width: 120px;
+    height: 120px;
+    margin: 2rem auto;
+    border-radius: 50%;
+}
+.user-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+.user-name,.user-about{
+text-align: center;
+margin-top: 2rem;
+font-size: 1.5rem;
+}
+.user-about{
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+.hire-me{
+    padding: 20px 35px;
+    display: block;
+    margin: 2rem auto;
+    color: #171717;
+    border: none;
+    border-radius:3.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.hire-me:hover{
+    cursor: pointer;
+}
+.social-container{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.social-icon{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+
+}
+.social-icon:hover{
+    transform: scale(1.05);
+    transition: all;
+    cursor: pointer;
+}
+.social-icon i {
+    font-size: 28px;
+}
+.social-icon p{
+    font-size: 18px;
 }
