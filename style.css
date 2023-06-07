@@ -14,7 +14,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(16, 16, 16);
+    /* background-color: rgb(16, 16, 16); */
+    background: #d6ebf1;
+    /* background: #f5f5f5; */
+
 
 }
 
@@ -26,14 +29,15 @@ body {
     animation: fadeIn 1s ease-in;
 }
 
-.card-inner{
+.card-inner {
     width: 100%;
     height: 100%;
     position: relative;
     transition: transform 1s;
     transform-style: preserve-3d;
-    background-color: rgba(33, 33, 33, .74);
-    border: 1px solid rgba(255, 255, 255, .1);
+    background-image: linear-gradient(to left bottom, #9c42bc, #925ccb, #8871d7, #8283df, #8094e4, #759fe9, #6ca9eb, #69b3eb, #53baea, #41c1e5, #38c7dd, #3fccd3);
+    /* background-color: rgba(33, 33, 33, .74); */
+    /* border: 1px solid rgba(255, 255, 255, .1); */
     border-radius: 1rem;
 }
 
@@ -67,78 +71,134 @@ body {
     border-radius: 50%;
     border: 2px solid rgba(255, 255, 255, .1);
 }
-.card-front .content h2{
+
+.card-front .content h2 {
     font-weight: 300;
     margin-top: 10px;
 }
-.card-front .content h4{
+
+.card-front .content h4 {
     font-weight: 200;
     margin-bottom: 10px;
     color: rgba(255, 255, 255, 0.528);
 }
+
 .card-front .content p {
     font-weight: 100;
 }
-.hover-me{
+
+.hover-me {
     position: absolute;
     bottom: 0;
     padding: .5rem;
     box-sizing: border-box;
 }
 
-.hover-me p{
+.hover-me p {
     font-size: 12px;
 }
-/* .card:hover .card-inner{
+
+.card:hover .card-inner {
     transform: rotateY(180deg);
-} */
-.card-front{
-    display: none;
 }
 
-.card-back{
-    transform: rotateY(360deg);
+
+.card-back {
+    transform: rotateY(180deg);
 }
-.card-back .content{
+
+.card-back .content {
     padding: 1rem;
 }
 
-.skills-container{
-    display: flex;
-    overflow-x: hidden;
-    gap: 20px;
+.card-back .content h3 {
+    color: rgba(255, 255, 255, 0.654);
+    font-size: 20px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: .4rem;
 }
-.skills-container>div{
+
+.skills-tools-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+.skills-tools-container>div {
     display: flex;
     align-items: center;
-    animation: slide 10s linear infinite;
-    gap: 20px;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, .1);
+    padding: 5px 10px;
+    border-radius: 10px;
 }
-.skills-container i{
-    font-size: 35px;
-    color: rgba(255, 255, 255, 0.343);
+
+.skills-tools-container i {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.654);
 }
-.skills-container p{
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.343);
+
+.skills-tools-container p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.654);
 }
-@keyframes slide {
-    0%{
-        transform: translate3d(0,0,0);
-    }
-    100%{
-        transform: translate3d(-687px,0,0);
-    }
-    
+
+.card-back .content button {
+    width: 100%;
+    padding: 5px 0;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.188);
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.654);
+    transition: transform .5s ease;
+    cursor: pointer;
 }
+
+.card-back .content>p {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.654);
+}
+
+.networks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.networks i {
+    color: rgba(255, 255, 255, 0.654);
+    font-size: 25px;
+}
+
+.card-back .content h3:hover,
+.skills-tools-container>div:hover i,
+.card-back .content button:hover ,
+.card-back .content>p:hover,
+.networks i:hover{
+    color: #f5f5f5;
+}
+
 @keyframes fadeIn {
-    0%{
+    0% {
         opacity: .5;
         transform: translateY(10px);
     }
-    100%{
+
+    100% {
         opacity: 1;
         transform: translateX(0);
     }
-    
+
 }
