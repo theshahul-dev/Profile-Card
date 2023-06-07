@@ -27,6 +27,9 @@ body {
     perspective: 1000px;
     cursor: pointer;
     animation: fadeIn 1s ease-in;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    
 }
 
 .card-inner {
@@ -39,6 +42,7 @@ body {
     /* background-color: rgba(33, 33, 33, .74); */
     /* border: 1px solid rgba(255, 255, 255, .1); */
     border-radius: 1rem;
+   
 }
 
 .card-front,
